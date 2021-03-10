@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1615107061833' stop='1615107061872'>
+    <name>all functional test</name>
+    <title>all functional test</title>
+    <test-cases>
+        <test-case start='1615107061833' status='passed' stop='1615107061837'>
+            <name>should open signup page</name>
+            <title>should open signup page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061837' status='passed' stop='1615107061843'>
+            <name>should register the user</name>
+            <title>should register the user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061844' status='passed' stop='1615107061847'>
+            <name>should open login page</name>
+            <title>should open login page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061847' status='passed' stop='1615107061851'>
+            <name>should login the user</name>
+            <title>should login the user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061851' status='passed' stop='1615107061855'>
+            <name>should search the recipe</name>
+            <title>should search the recipe</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061855' status='passed' stop='1615107061858'>
+            <name>should marked  the recipe favourite</name>
+            <title>should marked  the recipe favourite</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061858' status='passed' stop='1615107061862'>
+            <name>should marked  the recipe recommended</name>
+            <title>should marked  the recipe recommended</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061862' status='passed' stop='1615107061867'>
+            <name>should removed the recipe from favourites</name>
+            <title>should removed the recipe from favourites</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061867' status='passed' stop='1615107061870'>
+            <name>should removed the recipe from recommended</name>
+            <title>should removed the recipe from recommended</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1615107061870' status='passed' stop='1615107061872'>
+            <name>should logout the user</name>
+            <title>should logout the user</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

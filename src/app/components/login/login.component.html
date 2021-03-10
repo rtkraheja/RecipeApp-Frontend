@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+
+<div class="bg-img">
+
+
+  <!-- <div class="container text-center"> -->
+    <mat-card class="changeFirmCard">
+      <img mat-card-image src=""/>
+      <mat-card-header>
+        <h1>Login Here</h1>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="container-fluid" id="firm-select">
+          <div class="col-md-12">
+           
+             
+              <form [formGroup]="userInfo" (ngSubmit)="OnUserInfoSubmit()">
+                
+                    
+                    <mat-form-field class="full-width">
+                       <mat-label>Email</mat-label>
+                       <input  matInput  placeholder="Email" formControlName="userId" required>
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                       <mat-label>Password</mat-label>
+                       <input matInput type="password"   placeholder="Password"  formControlName="password" required>
+                    </mat-form-field>
+
+                    <mat-card-actions>
+                      <button id="btn" [disabled]="userInfo.invalid" mat-raised-button  color="primary">LOGIN</button>
+                    </mat-card-actions>
+             </form>
+               
+              
+            
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  <!-- </div> -->
+
+</div>
+  
+
+
+
+
+ 

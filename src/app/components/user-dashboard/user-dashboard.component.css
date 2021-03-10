@@ -1,0 +1,89 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+button {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+ #logout{
+  color:white
+}
+
+.example-form {
+    width: 100%;
+  }
+  
+  /* .example-full-width {
+    width: 100%;
+  } */
+
+
+  
+.example-card {
+  max-width: 250px;
+  margin:2rem;
+}
+
+
+.book_cover{
+  
+  max-height: 100%;
+ 
+  text-align: center;
+ 
+}
+
+.mat-card img{
+object-fit: fill; /*this makes the image in src fit to the size specified below*/
+width: 114.9%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+height: 100%;
+padding-top: 2rem;
+padding-bottom: 2rem;
+
+}
+
+button {
+border: none;
+border-radius: 0;
+background-color: transparent;
+}
+
+.mat-icon {
+color:red;
+font-size: 2rem;
+}
+
+/*button{
+
+height: 20px;
+width: 15px;
+}*/
+
+#recipe_name {
+  cursor: pointer;
+  text-align: center!important;
+  text-decoration: none;
+  padding-left: 0.5rem!important;
+
+}
+
+
+.avatar {
+  margin: 0.5;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+}
+
+button .btn{
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  
+}

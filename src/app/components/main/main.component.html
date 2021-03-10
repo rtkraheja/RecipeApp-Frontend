@@ -1,0 +1,43 @@
+<app-header></app-header>
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+
+<div class="container-fluid">
+
+        <div class="row" style="display: flex;">
+          
+        <mat-card class="example-card"  *ngFor="let recipe of  recipeData">
+            
+            <p id="recipe_name">{{recipe.recipe.label}}</p>
+            <div class="book_cover">
+                <img mat-card-image  class="img" src="{{recipe.recipe.image}}" alt="Book Cover">
+            </div>
+
+            <mat-card-actions>
+            <button  mat-icon-button >
+                <mat-icon inline=true class="example-icon" aria-hidden="false" aria-label="Example hea">favorite</mat-icon>
+                </button>
+           
+        </mat-card-actions> 
+
+            
+        </mat-card>
+
+       
+
+        
+ </div> 
+
+</div>
+
+
+
+
+<app-footer></app-footer>

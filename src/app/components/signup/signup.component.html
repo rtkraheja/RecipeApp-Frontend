@@ -1,0 +1,93 @@
+<button type="button" class="close" data-dismiss="modal" (click)="closeDialog()" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+</button>
+
+
+
+<h1>Register Here</h1>
+<div class="container text-center">
+
+
+      
+      <img src="{{imgURL}}" [ngStyle]="{'display':show}" class="avatar">
+     
+
+
+
+      <form [formGroup]="userInfo" (ngSubmit)="OnUserInfoSubmit()" enctype="multipart/form-data">
+                     
+                  
+         
+            <label for="actual-btn">Choose File</label>
+            <input id="actual-btn" type="file" formControlName="profileImage"  (change)="onFileSelect($event)" 
+            accept="image/*" hidden/>
+         
+            <br>
+            <mat-form-field class="full-width" appearance="outline">
+               <mat-label>First Name</mat-label>
+               <input type="text"  matInput  placeholder="First name"  formControlName="firstName">
+           
+               <mat-error *ngIf="userInfo.get('firstName').hasError('required')"
+               >First Name is required</mat-error>
+             <mat-error *ngIf="userInfo.get('firstName').hasError('minlength')"
+               >More than 3 character is required
+             </mat-error>
+           
+           
+            </mat-form-field>
+
+
+           
+            <br>
+            <mat-form-field class="full-width" appearance="outline">
+               <mat-label>Last Name</mat-label>
+               <input type="text" matInput  placeholder="Last Name" formControlName="lastName"  >
+            
+               <mat-error *ngIf="userInfo.get('lastName').hasError('required')"
+               >Last Name is required</mat-error>
+             <mat-error *ngIf="userInfo.get('lastName').hasError('minlength')"
+               >More than 3 character is required
+             </mat-error>
+               
+            </mat-form-field>
+
+          
+            <br>
+            <mat-form-field class="full-width" appearance="outline">
+               <mat-label>Email</mat-label>
+               <input type="email"  matInput  placeholder="Email" 
+               
+               
+               pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}"
+               formControlName="userId"  >
+
+             
+               <mat-error *ngIf="userInfo.get('userId').hasError('required')"
+               >Email is required</mat-error>
+             <mat-error *ngIf="userInfo.get('userId').hasError('email')"
+               >Please enter a valid email address
+             </mat-error>
+   
+
+            
+            </mat-form-field>
+
+           
+         
+          
+            <br>
+            <mat-form-field class="full-width" appearance="outline">
+               <mat-label>Password</mat-label>
+               <input type="password" matInput   placeholder="Password"  formControlName="password" >
+            
+             
+            </mat-form-field>
+
+        
+            <br>
+            <button id="btn"  mat-raised-button  color="primary">Sign Up</button>
+            
+     </form>
+   </div>
+
+

@@ -1,0 +1,26 @@
+.example-icon {
+    padding: 0 14px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  /*button.mat-button .mat-icon,
+a.mat-button .mat-icon,
+a.mat-raised-button .mat-icon,
+a.mat-flat-button .mat-icon,
+a.mat-stroked-button .mat-icon {
+  vertical-align: top;
+  font-size: 1.25em;
+}*/
+
+button {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.mat-icon {
+  color:white
+}

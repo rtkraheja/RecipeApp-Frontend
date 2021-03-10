@@ -1,0 +1,126 @@
+
+
+
+
+<ngx-spinner
+bdColor="rgba(51,51,51,0.8)"
+size="medium"
+color="#fff"
+type="ball-scale-multiple"
+>
+<p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>
+<mat-toolbar color="primary">
+    <h1>Logo</h1>
+
+    
+  <!--  <h4>Dashboard</h4>
+    <h4>Favourite</h4>
+    <h4>Recommended</h4>--->
+   
+    <span class="example-spacer"></span>
+
+    
+    
+    <h4>Welcome {{firstName}} {{lastName}}</h4>
+    <img class="avatar" src="http://localhost:8080/image/{{this.userPic}}" />
+    
+   
+   
+  
+    <button  id="logout" mat-icon-button (click)="logoutHandler()">
+    <mat-icon  inline=true class="example-icon" aria-hidden="false" aria-label="Example delete icon">logout</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  
+
+<mat-tab-group mat-align-tabs="center" animationDuration="0ms">
+  <mat-tab label="Dashboard">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container text-center" >
+      <form [formGroup]="searchInfo"   (keyup.enter)="OnUserQuerySubmit()" class="example-form">
+            <mat-form-field class="example-full-width">
+            
+            <input type="text" ([ngModel])="query" matInput aria-label="text" placeholder="Enter dish or cusine name" width = "400px"  formControlName="search" >
+            <mat-icon matPrefix>search</mat-icon>
+            </mat-form-field>
+
+            <button mat-button (click)="OnUserQuerySubmit()">Search</button>
+        </form>
+    </div>
+      
+     <div *ngIf="show; else ht">
+      <app-recipe></app-recipe>
+    </div> 
+
+   
+      
+    <ng-template #ht>
+
+      <div class="container-fluid" [ngStyle]="{'display':searchView}">
+    
+        <div class="row" style="display: flex;">
+          
+        <mat-card class="example-card"  *ngFor="let recipe of  recipeData">
+            
+          <p id="recipe_name" [routerLink]="" (click)="goToRecipe(recipe.recipe.url)">{{recipe.recipe.label}}</p>
+            <div class="book_cover">
+                <img mat-card-image  class="img" src="{{recipe.recipe.image}}" alt="Recipe Cover">
+            </div>
+
+           
+      
+            <mat-card-actions>
+         
+              <button class="btn" (click)="addToFavouriteHandler(recipe)" mat-flat-button>
+                Favourite
+               </button>
+ 
+               <button class="btn" (click)="addToRecommendHandler(recipe)" mat-flat-button>
+                 Recommended
+                </button>
+               
+           
+        </mat-card-actions> 
+      
+            
+        </mat-card>
+      
+       
+      
+        
+      </div> 
+      
+      </div>
+    </ng-template>
+
+   
+    
+
+    
+  </mat-tab>
+  <mat-tab label="Favourite">
+
+    <app-favourites>
+
+    </app-favourites>
+  
+  </mat-tab>
+  <mat-tab label="Recommended">
+    <app-recommendation></app-recommendation>
+  </mat-tab>
+</mat-tab-group>

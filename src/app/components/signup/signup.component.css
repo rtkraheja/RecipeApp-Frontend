@@ -1,0 +1,65 @@
+
+h1{
+  text-align: center;
+}
+.mat-form-field{
+  margin: 0.1rem;
+}
+
+
+.example-full-width {
+  width: 100%;
+}
+
+
+#btn
+{
+  margin-top: 1rem;
+  background-color:#1976d2;
+  color:whitesmoke;
+  border-radius: 0;
+}
+#btn:disabled{
+  background-color: grey;
+}
+
+.avatar {vertical-align: middle;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin-left: 15rem;
+}
+
+.mat-grid-tile {
+  background: lightblue;
+}
+
+
+
+.container-fluid {
+  display: inline-block;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1;
+  
+}  
+
+.flex-child:first-child {
+  margin-right: 20px;
+} 
+
+
+label {
+  background-color: indigo;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
